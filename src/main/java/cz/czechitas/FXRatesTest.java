@@ -1,5 +1,6 @@
 package cz.czechitas;
 
+import javax.swing.plaf.*;
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
@@ -26,7 +27,7 @@ public class FXRatesTest {
         Thread.sleep(2000);
 
         FXRatesPage fxRatesPage = new FXRatesPage(driver);
-        fxRatesPage.GetBuyingPriceOfuro();
+        fxRatesPage.GetBuyingPrice("JPY");
         Thread.sleep(2000);
     }
 
